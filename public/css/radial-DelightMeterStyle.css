@@ -1,0 +1,98 @@
+﻿
+
+/* Input section */
+
+#scoreReadervision {
+    width: 20%;
+    background: #E7E7E7;
+    margin: auto;
+    border-radius: 3px;
+    padding: 0 25px 30px 25px;
+    text-align:center;
+}
+    #scoreReadervision input #txtScoresvision{
+        border: none;
+        border-radius: 3px;
+        width: 80%;
+        height: 25px;
+        font-size: 25px;
+    }
+
+/* Needle of the meter */
+
+#delightmetervision .needlevision,#delightmetervision  .needle-centervision {
+    fill: #808080;
+}
+#delightmetervision .needlesetvision {
+    -webkit-transition: All 3s ease-in-out;
+    -moz-transition: All 3s ease-in-out;
+    -o-transition: All 3s ease-in-out;
+}
+#delightmetervision .needle-pointervision {
+    fill: #fff;
+    stroke-width: 5px;
+    z-index: 2;
+}
+
+/* Each arc in the meter */
+
+#delightmetervision .arcvision {
+    fill: none;
+    stroke-width: 30px;
+}
+#delightmetervision #arc1vision {
+    stroke: #099f51;
+
+}
+#delightmetervision #arc2vision {
+    stroke: #099f51;
+     /*stroke: #ff6a00;*/
+}
+#delightmetervision #arc3vision {
+    stroke: #ffd800;
+}
+#delightmetervision #arc4vision {
+     stroke: #ffd800; /*stroke: #83e043;*/
+}
+#delightmetervision #arc5vision {
+    stroke: #f12828;
+}
+
+/* For the score inside circle */
+
+#delightmetervision .scoreInCirclevision {
+    -webkit-transition: All 3s ease;
+    -moz-transition: All 3s ease;
+    -o-transition: All 3s ease;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ed8151;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #ed8151;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ed8151;
+}
+

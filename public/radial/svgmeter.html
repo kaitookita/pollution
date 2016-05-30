@@ -1,0 +1,29 @@
+﻿<!-- Template to be used by the link fucntion in custom directive -->
+<div id="delightmetervision">
+    <svg viewBox="-100 25 600 200" class="svg-content" xmlns='http://www.w3.org/2000/svg'>
+        <g>
+            <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="3s" />   
+            <!-- Drawing each arc -->         
+            <path class='arcvision' id='arc1vision' d='' />
+            <path class='arcvision' id='arc2vision' d='' />
+            <path class='arcvision' id='arc3vision' d='' />
+            <path class='arcvision' id='arc4vision' d='' />
+            <path class='arcvision' id='arc5vision' d='' />
+            <!-- Drawing the needle -->
+            <g class='needlesetvision'>
+                <circle class='needle-centervision' cx='200' cy='200' r='5'></circle>
+                <path class='needlevision' d='M 200 195 L 60 200 L 200 205'></path>
+                <!--     <circle class='needle-centervision' cx='60' cy='200' r='20'></circle>
+                   <circle id="needlePointervision" class="needle-pointervision" cx='60' cy='200' r='17' fill=""></circle>
+                   <g class="scoreInCirclevision">
+                        <text x='55' y='200' fill='black' transform="">{{scores}}</text>
+                    </g> -->
+            </g>
+            <!-- Rendering the meter values -->
+            <text x='120' y='195' fill='black'>ไม่มีกลิ่น</text>
+           <!-- <text x='195' y='220' fill='black'>{{scores}}</text> -->
+            <text x='195' y='80' fill='black'>มีกลิ่น</text>
+            <text x='314' y='195' fill='black'>มีกลิ่นมาก</text>
+        </g>
+    </svg>
+</div>
