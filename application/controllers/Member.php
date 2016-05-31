@@ -46,8 +46,8 @@ class Member extends CI_Controller {
         }
         else{
             $password = $this->input->post('password');
-            $password = $this->encrypt->encode($password);
-            //$password = password_hash($password, PASSWORD_BCRYPT);
+            //$password = $this->encrypt->encode($password);
+            $password = password_hash($password, PASSWORD_DEFAULT);
             //var_dump($password);
 
             $temp = "UPDATE users SET password = '".$password."', resetComplete = 'Yes'  WHERE resetToken = '".$key."'";

@@ -38,7 +38,8 @@ class Register extends CI_Controller{
             $lastname = $this->input->post('lastname');
             $email    = $this->input->post('email');
             $pass = $this->input->post('password');
-            $password = $this->encrypt->encode($pass);
+            //$password = $this->encrypt->encode($pass);
+            $password = password_hash($pass, PASSWORD_DEFAULT);
             if($this->model_user->insert_user($firstname,$lastname,$email,$password)){
 
                 /*$this->load->view('header');*/

@@ -15,8 +15,9 @@ class Model_login extends CI_Model{
         if($result->num_rows() === 1){
             if($row->activated){
                 $temppass = $row->password;
-                $temppass = $this->encrypt->decode($temppass);
-                if($temppass === $password){
+                //$temppass = $this->encrypt->decode($temppass);
+                
+                if(password_verify($password, $temppass)){
                     // authenticated, now update the user's session
                     $session_data = array(
                         'user_id'    => $row->user_id,
